@@ -1,5 +1,4 @@
-s=input()
-res=[0]*26
-for i in s:
-    res[ord(i)-97]+=1
-print(*res)
+#10808. 알파벳 개수
+n=input()
+for i in range(97,123):
+  print(n.find(chr(i)),end=' ')
