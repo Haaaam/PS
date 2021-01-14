@@ -11,3 +11,4 @@ for i in range(n):
             break
     stack.append(num[i])
 print(''.join(stack[:n-k]))
+
