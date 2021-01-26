@@ -1,2 +1,2 @@
-# Algorithmn
-I explain how I solved problems  https://blog.naver.com/hyemin8670
+# Algorithmn :computer:
+I explain how I solved problems :point_right: <https://blog.naver.com/hyemin8670>
