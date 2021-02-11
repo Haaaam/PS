@@ -1,3 +1,5 @@
+#2021.02.11
+#[BOJ]1303. 전쟁 - 전투
 from collections import deque
 import sys
 input=sys.stdin.readline
