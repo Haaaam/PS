@@ -1,3 +1,6 @@
+#2021.02.15
+#[BOJ]2583. 영역 구하기
+
 from collections import deque
 m,n,k=map(int,input().split())
 graph=[[0]*(n) for _ in range(m)]
