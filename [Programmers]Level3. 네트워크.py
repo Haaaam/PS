@@ -1,20 +1,17 @@
-n=3
-computers=[[1,1,0],[1,1,1],[0,1,1]]
-
-
+def dfs(n,visited,computers,computer):
+        visited[computer]=True
+        for i in range(n):
+            if i!=computer and computers[computer][i]==1:
+                if not visited[i]:
+                    dfs(n,visited,computers,i)
+                    
 def solution(n,computers):
     answer=0
     visited =[False]*n
-    def dfs(visited,computers,v):
-        visited[v]=True
-        for i in computers[v]:
-            if not visited[i]:
-                dfs(visited,computers,i)
-    for i in range(n):
-        if not visited[i]:
-            dfs(visited,computers,)
+    for computer in range(n):
+        if not visited[computer]:
+            dfs(n,visited,computers,computer)
             answer+=1
     return answer
-
 
 
