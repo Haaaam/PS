@@ -1,14 +1,11 @@
-#2021.02.25
-#[BOJ]13305. 주유소
-
+#2021.05.08 resolving
 n=int(input())
-km=list(map(int,input().split()))
-coin=list(map(int,input().split()))
-cost=coin[0]*km[0]
-target_coin=coin[0]
+distance=list(map(int,input().split()))
+price=list(map(int,input().split()))
+cost=price[0]*distance[0]
+target=price[0]
 for i in range(1,n-1):
-    if target_coin>=coin[i]:
-        target_coin=coin[i]
-    cost+=target_coin*km[i]
+    if target>=price[i]:
+        target=price[i]
+    cost+=target*distance[i]
 print(cost)
-
