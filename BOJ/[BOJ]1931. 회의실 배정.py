@@ -1,12 +1,11 @@
+import sys
+input=sys.stdin.readline
 n=int(input())
-time=sorted([list(map(int,input().split()))
-             for i in range(n)],key=lambda x:(x[1],x[0]))
-end=0
-res=0
-
-for i in time:
-    if i[0]>=end:
-        end=i[1]
-        res+=1
-print(res)
-
+conference=sorted([list(map(int,input().split()))
+                   for _ in range(n)], key=lambda x:(x[1],x[0]))
+e=cnt=0
+for time in conference:
+    if time[0]>=e:
+        e=time[1]
+        cnt+=1
+print(cnt)
