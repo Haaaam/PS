@@ -1,27 +1,17 @@
-import math
-import os
-import random
-import re
-import sys
+s=input()
+time=s.split(':')
+h,m,se=time[0],time[1],time[2]
+if 'AM' in se:
+    if h=='12':
+        h='00'
+    print(f"{h}:{m}:{se.split('AM')[0]}")
 
-#
-# Complete the 'plusMinus' function below.
-#
-# The function accepts INTEGER_ARRAY arr as parameter.
-#
+elif 'PM' in se:
+    h=int(time[0])
+    if h<12:
+        h+=12
+    h=str(h)
+    print(f"{h}:{m}:{se.split('PM')[0]}")
 
 
-if __name__ == '__main__':
-    n = int(input().strip())
-    m, p, z = 0, 0, 0
-    arr = list(map(int, input().rstrip().split()))
-    for i in arr:
-        if i < 0:
-            m += 1
-        elif i == 0:
-            z += 1
-        else:
-            p += 1
-    print(p / n)
-    print(m / n)
-    print(z / n)
+
