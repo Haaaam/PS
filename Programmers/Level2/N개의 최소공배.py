@@ -1,1 +1,1 @@
-arr=list(map(int,input)_)
+arr=list(map(int,input().split()))
