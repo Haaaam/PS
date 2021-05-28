@@ -26,9 +26,6 @@ class Student(Person):
 
         return res
 
-
-
-
 line=input().split()
 firstName=line[0]
 lastName=line[1]
