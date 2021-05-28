@@ -10,11 +10,14 @@ class Book(object, metaclass=ABCMeta):
 #Write MyBook class
 class MyBook(Book):
     def __init__(self,title,author,price):
-        self.title=title
-        self.author=author
+        Book.__init__(self,title,author)
+        #super(Book,self).__init__()
         self.price=price
+
     def display(self):
-        return price
+        print('Title: '+title)
+        print('Author: '+author)
+        print('Price: '+str(price))
 
 title=input()
 author=input()
