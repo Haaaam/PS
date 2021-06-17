@@ -28,3 +28,5 @@ lower_confidence=m-1.96*sd/len(x)**0.5
 upper_confidence=m+1.96*sd/len(x)**0.5
 # Confidence Interval for the mean
 print(round(lower_confidence,1),round(upper_confidence,1))
+
+
