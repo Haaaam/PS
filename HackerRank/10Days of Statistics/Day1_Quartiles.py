@@ -16,3 +16,4 @@ else:
 print(int(median(low)))
 print(int(median(arr)))
 print(int(median(up)))
+
