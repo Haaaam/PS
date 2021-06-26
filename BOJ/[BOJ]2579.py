@@ -8,4 +8,3 @@ n=int(input())
 stairs=[]
 for i in range(n):
     stairs.append(int(input()))
-print(stairs)
