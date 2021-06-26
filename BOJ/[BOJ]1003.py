@@ -16,3 +16,5 @@ for _ in range(t):
     o = [0] * (n + 1)
     print(*sol(n))
 
+    
+
