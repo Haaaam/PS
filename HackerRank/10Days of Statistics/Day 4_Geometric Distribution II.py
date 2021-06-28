@@ -10,3 +10,4 @@ a,b=list(map(int,input().split()))
 n=int(input())
 res=sum([sol(i,a/b) for i in range(1,n+1)])
 print(round(res,3))
+
