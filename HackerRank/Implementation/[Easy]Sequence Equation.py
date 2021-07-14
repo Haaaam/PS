@@ -1,17 +1,10 @@
-import math
-import os
-import random
-import re
-import sys
+def sol(n,p):
+    x_p_index=[p.index(i)+1 for i in range(1,n+1)]
+    res=[p.index(i)+1 for i in x_p_index]
+    return res
 
-def permutationEquation(p):
-    for i in range(len(p)):
-
-
-if __name__=='__main__':
-    fptr=open(os.environ['OUTPUT_PATH'],'w')
-    n=int(input())
-    p=list(map(int,input().split()))
-
-    result=permutationEquation(p)
+n=int(input())
+p=list(map(int,input().split()))
+for i in sol(n,p):
+    print(i)
 
