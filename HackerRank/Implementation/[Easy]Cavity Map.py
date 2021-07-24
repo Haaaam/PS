@@ -13,4 +13,3 @@ for i in range(1,(n-2)+1):
             grid[i][j]='X'
 for i in range(n):
     print(''.join(sol(n,grid)[i]))
-
