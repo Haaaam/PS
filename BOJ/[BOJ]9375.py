@@ -12,7 +12,6 @@ def sol(n,wear,res):
             res*=(val+1)
 
     return res-1
-
 t=int(input())
 for _ in range(t):
     n=int(input())
