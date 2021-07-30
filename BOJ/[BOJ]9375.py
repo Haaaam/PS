@@ -10,7 +10,7 @@ def sol(n,wear,res):
 
         for key,val in wear.items():
             res*=(val+1)
-           
+
     return res-1
 
 t=int(input())
