@@ -9,3 +9,4 @@ if ans:
     print(min(ans))
 else:
     print(-1)
+
