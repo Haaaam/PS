@@ -11,3 +11,4 @@ if stack:
     print(''.join(stack))
 else:
     print('FRULA')
+
