@@ -1,4 +1,4 @@
-# 시간 관리(다시풀기)
+# 시간 관리
 n=int(input())
 time=[list(map(int,input().split())) for _ in range(n)]
 time.sort(key=lambda x:x[1],reverse=True)
@@ -12,3 +12,4 @@ if s<0:
     print(-1)
 else:
     print(s)
+
