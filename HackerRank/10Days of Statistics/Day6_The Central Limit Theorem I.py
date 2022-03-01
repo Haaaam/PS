@@ -2,7 +2,6 @@
 import math
 
 x,boxes,mu,sd=int(input()),int(input()),int(input()),int(input())
-
 mu_sum=boxes*mu
 
 sd_sum=math.sqrt(boxes)*sd
