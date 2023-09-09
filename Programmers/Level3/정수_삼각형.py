@@ -21,5 +21,5 @@ for i in range(1,len(triangle)):
             up = 0
         else:
             up = triangle[i-1][j]
-        dp[i][j]=dp[i][j]+max(up_left,up)
+        dp[i][j]=triangle[i][j]+max(up_left,up)
 print(max(dp[len(triangle)-1]))
