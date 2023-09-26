@@ -16,17 +16,19 @@ def solution(number, limit, power):
                 # 제곱이 되는 수는 count 1을 하여 중복 방지
                 if j ** 2 != i:
                     cnt += 1
+        if cnt>limit:
+            cnt=power
         nums.append(cnt)
 
     # print(nums.count())
-    for i in range(len(nums)):
-        # 공격력이 제한 수치를 넘는 경우
-        if nums[i] > limit:
-            answer += power
-        else:
-            answer += nums[i]
+  #  for i in range(len(nums)):
+  #      # 공격력이 제한 수치를 넘는 경우
+  #      if nums[i] > limit:
+  ##          answer += power
+   #     else:
+   #         answer += nums[i]
 
-    return answer
+    return sum(nums)
 # 공격력의 제한수치를 정하고, 제한수치보다 큰 공격력을 가진 무기를 구매해야 하는 기사는 협약기관에서 정한 공격력을 가진 무기 구매
 
 # number: 기사단원의 수, limit: 공격력의 제한수치, power: 사용할 무기의 공격력
@@ -47,13 +49,15 @@ for i in range(1, number + 1):
             # 제곱이 되는 수는 count 1을 하여 중복 방지
             if j ** 2 != i:
                 cnt += 1
+    if cnt > limit:
+        cnt = power
     nums.append(cnt)
 
 # print(nums.count())
-for i in range(len(nums)):
+#for i in range(len(nums)):
     # 공격력이 제한 수치를 넘는 경우
-    if nums[i] > limit:
-        answer += power
-    else:
-        answer += nums[i]
-print(answer)
+#    if nums[i] > limit:
+#        answer += power
+#    else:
+#        answer += nums[i]
+print(sum(nums))
