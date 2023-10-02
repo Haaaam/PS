@@ -41,20 +41,8 @@ def solution(brown, yellow):
             return [r[i],c[i]]
     """
 brown,yellow=24,24
-all=brown+yellow
 
-r,c=3,1
-
-while 1:
-    c=all//r
-    remainder=all%r
-
-    if remainder==0 and r>=c and (r-2)*(c-2)==yellow:
-        print([r,c])
-        break
-    else:
-        r+=1
-#print(solution(brown,yellow))
+print(solution(brown,yellow))
 
 """
 def f(all):
