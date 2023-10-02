@@ -9,10 +9,11 @@ def solution(brown, yellow):
 
     while 1:
         # 높이: all//r
-        c = all // r
+       # c = all // r
         # 나머지: all%r
-        remainder = all % r
-
+       # remainder = all % r
+        c,remainder=divmod(all,r)
+        
         if remainder == 0 and r >= c and (r - 2) * (c - 2) == yellow:
             return [r, c]
 
