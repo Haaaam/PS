@@ -1,6 +1,8 @@
-def solution(strings,n):
+def solution(strings, n):
 
-    return sorted(strings,key=lambda strings:(strings[n],strings))
-strings=input().split()
+    return sorted(strings, key= lambda x:(x[n],x))
+
+strings=["sun","bed","car"]
 n=int(input())
+
 print(solution(strings,n))
