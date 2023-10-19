@@ -10,7 +10,7 @@ def solution(clothes):
 
     for k, v in clothes_dic.items():
         answer *= (v + 1)
-    return answer
+    return answer-1
 
 # 코니는 각 종류별로 최대 1가지 의상만 착용 가능
 # 착용한 의상의 일부가 겹치더라도, 다른 의상이 겹치지 않거나, 혹은 의상을 추가로
