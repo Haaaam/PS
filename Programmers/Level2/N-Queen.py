@@ -1,5 +1,5 @@
 # 한 행에 하나의 퀸만 있다고 생각하고 풀기
-
+"""
 def dfs(queen,n,x):
     res=0
     if x==n:
@@ -23,15 +23,33 @@ def dfs(queen,n,x):
                 res+=dfs(queen,n,x+1)
 
     return res
+"""
+def dfs(queen,n,x):
+    res=0
+    if x==n:
+        return 1
 
+    for i in range(n):
+        queen[x]=i
 
+        if check(x,queen):
+            res+=dfs(queen,n,x+1)
+    return res
+
+def check(x,queen):
+    for i in range(x):
+        if queen[x]==queen[i]:
+            return False
+        if abs(queen[x]-queen[i])==x-i:
+            return False
+    return True
 
 
 def solution(n):
     queen=[0]*n
+    answer=dfs(queen,n,0)
 
-
-    return dfs(queen,n,0)
+    return answer
 
 
 n=int(input())
