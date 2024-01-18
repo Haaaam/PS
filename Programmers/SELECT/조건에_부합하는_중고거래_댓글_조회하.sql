@@ -1,0 +1,7 @@
+# 2022년 10월에 작성된 게시글 제목, 게시글 ID, 댓글 ID, 댓글 작성자 ID, 댓글 내용, 댓글 작성일을 조회하는 SQL문 작성
+# 결과는 댓글 작성일을 기준으로 오름차순 정렬, 댓글 작성일이 같다면 게시글 제목을 기준으로 오름차순 정렬
+# 유의할점: USED_GOODS_BOARD 와 USED_GOODS_REPLY의 BOARD_ID가 같을떄를 고려해야 한다.
+SELECT  A.TITLE, A.BOARD_ID, B.REPLY_ID, B.WRITER_ID, B.CONTENTS,DATE_FORMAT(B.CREATED_DATE,"%Y-%m-%d") AS CREATED_DATE
+FROM USED_GOODS_REPLY AS B, USED_GOODS_BOARD AS A
+WHERE A.CREATED_DATE LIKE "2022-10%" AND A.BOARD_ID=B.BOARD_ID
+ORDER BY B.CREATED_DATE ASC, A.TITLE ASC
